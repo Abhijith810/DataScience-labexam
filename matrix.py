@@ -1,0 +1,17 @@
+import numpy as np
+x=np.array([[1,2,3],[2,4,3],[2,5,1]])
+y=np.array([[5,2,7],[3,8,1],[2,2,4]])
+add=np.add(x,y)
+print("Addition:",add)
+sub=np.subtract(x,y)
+print("Substraction:",sub)
+multi=np.multiply(x,y)
+print("Multiplication:",multi)
+div=np.divide(x,y)
+print("division:",div)
+from scipy.linalg import svd
+A=np.array([[1,2,3],[2,4,5],[3,5,1]])
+U,s,VT=svd(A)
+print("Decomposition:",U)
+print("inverse:",s)
+print("Transpose:",VT)
